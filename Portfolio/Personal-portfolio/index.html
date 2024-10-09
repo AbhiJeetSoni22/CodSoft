@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1>Hello <strong style="color: red; font-size: 2.2rem;">World</strong> </h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Abhijeet Soni</span></h1>
+            <p>Web developer focused on building responsive, user-friendly apps with clean code and modern technologies</p>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a passionate web developer specializing in creating responsive and user-friendly web applications. With a strong focus on clean code and modern frontend technologies, I strive to build seamless digital experiences that look great and perform flawlessly across all devices. My expertise lies in designing intuitive interfaces that combine aesthetics and functionality, ensuring a smooth and engaging user journey.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                 
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('achievement')">Achievement</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        
+                    </ul>
+                </div>
+               
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>
+                            Bachelor of Computer Applications (BCA) <br>
+                            Dr. Harisingh Gour University <br><br>
+                            <span>2021-2022</span><br>
+                            Senior Secondary (Class 12) - Govt Model Heigher Secondary <br>Percentage: 93%
+                            </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="achievement">
+                    <ul>
+                        <li><span>1st Prize in Extempore at Tech Fest ByteBloom's, 2024</span><br>
+                            Demonstrated strong communication and quick thinking skills by delivering a winning speech on an impromptu topic.
+                            </li>
+                        <li><span>  Participant at Bundelkhand Hackathon, 14-hour event, 2024</span><br>
+                           Collaborated on the project RepairMyGaddi, showcasing innovation and teamwork under time constraints.
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Crafting visually appealing and responsive websites, focusing on aesthetics and functionality to deliver engaging user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Designing intuitive and user-centered interfaces to ensure a seamless and enjoyable interaction for users across all devices."</p>
+                <a href="#">Learn more</a>
+            </div>
+          
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Developed a fully responsive Spotify clone with music playback and specific music selection. Implemented interactive features to mimic the original experience.</p>
+                  
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>RepairMyGadi</h3>
+                    <p>Built a website for users to easily connect with nearby mechanics by describing vehicle issues and sharing contact details. Focused on creating a user-friendly interface for efficient service requests.</p>
+                  
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>FindMyGym</h3>
+                    <p>landing page for a fitness center, showcasing class schedules, trainer profiles, and membership options. Prioritized a visually appealing design and smooth navigation to enhance user engagement and motivate fitness enthusiasts to join.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-4.png">
+                <div class="layer">
+                    <h3>FitnessWeb</h3>
+                    <p>Designed a modern and responsive website for a fitness center with class schedules, trainer profiles, and membership details. Focused on an engaging UI to attract fitness enthusiasts.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-5.png">
+                <div class="layer">
+                    <h3>tictaktoe</h3>
+                    <p>Created an interactive Tic Tac Toe game featuring a sleek and responsive design. The game allows players to enjoy classic gameplay against either a friend or a computer opponent. With an intuitive user interface.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-6.png">
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>Developed a classic Snake game using JavaScript, featuring simple controls and increasing difficulty. Players navigate the snake to collect food while avoiding collisions, offering a nostalgic and engaging experience.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> abhisonijeet123@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 7415081993</p>
+                <div class="social-icons">
+                    <a href="https://github.com/AbhiJeetSoni22/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/Abhijee97748833" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/abhijeetsoni47/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abhijeet-soni04/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+                
+                <a href="my-cv.pdf" download="Abhijeet-CV" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 <i class="fas fa-heart"></i>  <a href="#" >Abhijeet Soni </a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/home/projects/185oKmy7TSuUp1aefWJ23VFmN1ypPk2uQ2s6VYaNzEXz1fDCtOGlH9H4K/edit' 
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
